@@ -40,7 +40,7 @@ export default function Home() {
             Elevate Your <br/> Everyday Style.
           </h1>
           <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200">
-            Discover our curated selection of premium clothing, accessories, and electronics designed for the modern lifestyle.
+            Discover our curated selection of premium Ladies bags, accessories, and electronics designed for the modern lifestyle.
           </p>
           <Link 
             to="/store" 

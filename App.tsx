@@ -21,6 +21,8 @@ import AdminOrders from './pages/admin/Orders';
 import AdminCoupons from './pages/admin/Coupons';
 import AdminCustomers from './pages/admin/Customers';
 
+import ScrollToTop from './components/ScrollToTop';
+
 // Route Guards
 const PrivateRoute = ({ children }: { children: React.ReactElement }) => {
   const { user, loading } = useAuth();
@@ -46,16 +48,16 @@ function AppRoutes() {
         <Route path="product/:id" element={<ProductDetails />} />
         <Route path="cart" element={<Cart />} />
         <Route path="auth" element={<Auth />} />
-        <Route 
-          path="checkout" 
+        <Route
+          path="checkout"
           element={
             <PrivateRoute>
               <Checkout />
             </PrivateRoute>
-          } 
+          }
         />
-        <Route 
-          path="profile" 
+        <Route
+          path="profile"
           element={
             <PrivateRoute>
               <div className="p-8 text-center">
@@ -63,13 +65,13 @@ function AppRoutes() {
                 <p>Order history goes here.</p>
               </div>
             </PrivateRoute>
-          } 
+          }
         />
       </Route>
 
       {/* Admin Routes */}
-      <Route 
-        path="/admin" 
+      <Route
+        path="/admin"
         element={
           <AdminRoute>
             <AdminLayout />
@@ -92,6 +94,7 @@ export default function App() {
     <AuthProvider>
       <CartProvider>
         <HashRouter>
+          <ScrollToTop />
           <AppRoutes />
           <Toaster position="bottom-right" />
         </HashRouter>
