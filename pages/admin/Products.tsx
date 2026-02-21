@@ -154,8 +154,8 @@ export default function Products() {
                     value={form.category}
                     onChange={e => setForm({...form, category: e.target.value})}
                   >
-                    <option value="Clothing">Clothing</option>
-                    <option value="Electronics">Electronics</option>
+                    <option value="Bags">Bags</option>
+                    <option value="Watches">Watches</option>
                     <option value="Accessories">Accessories</option>
                     <option value="Home">Home</option>
                   </select>

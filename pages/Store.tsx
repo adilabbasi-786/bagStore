@@ -27,7 +27,7 @@ export default function Store() {
     setLoading(false);
   };
 
-  const filteredProducts = products.filter(p => 
+  const filteredProducts = products.filter(p =>
     p.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
@@ -38,7 +38,7 @@ export default function Store() {
           <h1 className="text-3xl font-bold mb-2">Our Store</h1>
           <p className="text-gray-500">Explore our complete collection of premium products.</p>
         </div>
-        
+
         <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
           <div className="relative">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
@@ -58,9 +58,10 @@ export default function Store() {
               onChange={(e) => setCategory(e.target.value)}
             >
               <option value="all">All Categories</option>
-              <option value="clothing">Clothing</option>
-              <option value="electronics">Electronics</option>
-              <option value="accessories">Accessories</option>
+              <option value="Bags">Bags</option>
+              <option value="Watches">Watches</option>
+              <option value="Accessories">Accessories</option>
+              <option value="Home">Home</option>
             </select>
           </div>
         </div>
@@ -77,7 +78,7 @@ export default function Store() {
           {filteredProducts.map((product) => (
             <div key={product.id} className="group bg-white rounded-xl border border-gray-200 hover:shadow-lg transition duration-300 overflow-hidden">
               <Link to={`/product/${product.id}`} className="block relative aspect-[4/5] overflow-hidden bg-gray-100">
-                 <img
+                <img
                   src={product.images[0] || `https://picsum.photos/seed/${product.id}/300/400`}
                   alt={product.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
@@ -88,14 +89,14 @@ export default function Store() {
                   </span>
                 )}
                 <button
-                    onClick={(e) => {
-                      e.preventDefault();
-                      addToCart(product);
-                    }}
-                    className="absolute bottom-4 right-4 bg-white text-black p-3 rounded-full shadow-lg translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-300 hover:bg-black hover:text-white"
-                  >
-                    <ShoppingBag size={18} />
-                  </button>
+                  onClick={(e) => {
+                    e.preventDefault();
+                    addToCart(product);
+                  }}
+                  className="absolute bottom-4 right-4 bg-white text-black p-3 rounded-full shadow-lg translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-300 hover:bg-black hover:text-white"
+                >
+                  <ShoppingBag size={18} />
+                </button>
               </Link>
               <div className="p-4">
                 <p className="text-xs text-gray-500 mb-1 uppercase tracking-wide">{product.category}</p>
