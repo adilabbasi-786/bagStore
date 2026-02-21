@@ -37,7 +37,7 @@ export default function Cart() {
                       <h3 className="font-bold text-lg text-gray-900">{product.title}</h3>
                       <p className="text-sm text-gray-500">{product.category}</p>
                     </div>
-                    <p className="font-bold text-xl">₹{(price * quantity).toFixed(2)}</p>
+                    <p className="font-bold text-xl">RS{(price * quantity).toFixed(2)}</p>
                   </div>
                   
                   <div className="flex items-center justify-between mt-4">
@@ -75,7 +75,7 @@ export default function Cart() {
             <div className="space-y-4 mb-6 text-sm">
               <div className="flex justify-between text-gray-600">
                 <span>Subtotal</span>
-                <span className="font-medium text-gray-900">₹{cartTotal.toFixed(2)}</span>
+                <span className="font-medium text-gray-900">RS{cartTotal.toFixed(2)}</span>
               </div>
               <div className="flex justify-between text-gray-600">
                 <span>Shipping</span>
@@ -89,7 +89,7 @@ export default function Cart() {
             <div className="border-t pt-6 mb-8">
               <div className="flex justify-between font-bold text-2xl">
                 <span>Total</span>
-                <span>₹{cartTotal.toFixed(2)}</span>
+                <span>RS{cartTotal.toFixed(2)}</span>
               </div>
               <p className="text-xs text-gray-400 mt-2">Including GST</p>
             </div>

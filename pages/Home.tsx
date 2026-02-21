@@ -102,11 +102,11 @@ export default function Home() {
                   <div>
                     {product.sale_price ? (
                       <div className="flex items-baseline gap-2">
-                        <span className="text-lg font-bold text-gray-900">₹{product.sale_price}</span>
-                        <span className="text-sm text-gray-400 line-through">₹{product.price}</span>
+                        <span className="text-lg font-bold text-gray-900">RS{product.sale_price}</span>
+                        <span className="text-sm text-gray-400 line-through">RS{product.price}</span>
                       </div>
                     ) : (
-                      <span className="text-lg font-bold text-gray-900">₹{product.price}</span>
+                      <span className="text-lg font-bold text-gray-900">RS{product.price}</span>
                     )}
                   </div>
                 </div>

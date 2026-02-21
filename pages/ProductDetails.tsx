@@ -74,11 +74,11 @@ export default function ProductDetails() {
             <div className="flex items-baseline gap-4 mb-8">
                {product.sale_price ? (
                 <>
-                  <span className="text-5xl font-bold text-brand-600">₹{product.sale_price}</span>
-                  <span className="text-2xl text-gray-400 line-through">₹{product.price}</span>
+                  <span className="text-5xl font-bold text-brand-600">RS{product.sale_price}</span>
+                  <span className="text-2xl text-gray-400 line-through">RS{product.price}</span>
                 </>
               ) : (
-                <span className="text-5xl font-bold text-gray-900">₹{product.price}</span>
+                <span className="text-5xl font-bold text-gray-900">RS{product.price}</span>
               )}
             </div>
           </div>
@@ -108,7 +108,7 @@ export default function ProductDetails() {
                <div className="bg-white p-2 rounded-full shadow-sm text-brand-600"><Truck size={20} /></div>
                <div>
                 <p className="font-bold text-sm">Free Shipping</p>
-                <p className="text-xs text-gray-500">On all orders over ₹2000</p>
+                <p className="text-xs text-gray-500">On all orders over RS2000</p>
               </div>
             </div>
              <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl">

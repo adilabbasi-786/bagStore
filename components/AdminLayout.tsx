@@ -19,7 +19,7 @@ export default function AdminLayout() {
       <aside className="w-64 bg-white border-r flex flex-col fixed h-full">
         <div className="p-6 border-b">
           <Link to="/" className="text-xl font-bold text-brand-900 flex items-center gap-2">
-            LuxeMart <span className="text-xs bg-gray-200 px-2 py-0.5 rounded text-gray-600">Admin</span>
+            Bagxco <span className="text-xs bg-gray-200 px-2 py-0.5 rounded text-gray-600">Admin</span>
           </Link>
         </div>
 

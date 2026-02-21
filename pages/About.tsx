@@ -19,7 +19,7 @@ export default function About() {
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Who We Are</h2>
             <p className="mb-4">
-              Founded in 2024, LuxeMart began with a simple mission: to make high-quality, premium products accessible to everyone, everywhere. We believe that style shouldn't come at the cost of substance, which is why we meticulously curate our collection to ensure every item meets our rigorous standards.
+              Founded in 2024, Bagxco began with a simple mission: to make high-quality, premium products accessible to everyone, everywhere. We believe that style shouldn't come at the cost of substance, which is why we meticulously curate our collection to ensure every item meets our rigorous standards.
             </p>
             <p>
               From cutting-edge electronics to timeless fashion pieces, our inventory is a reflection of the diverse needs and tastes of our global community.

@@ -112,7 +112,7 @@ export default function Layout() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold tracking-tight">LuxeMart</h3>
+              <h3 className="text-2xl font-bold tracking-tight">Bagxco</h3>
               <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
                 Premium products curated for the modern lifestyle. Quality meets elegance in every detail.
               </p>
@@ -160,7 +160,7 @@ export default function Layout() {
           </div>
           
           <div className="border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-            <p>&copy; {new Date().getFullYear()} LuxeMart Enterprise. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Bagxco Enterprise. All rights reserved.</p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-white transition">Privacy Policy</a>
               <a href="#" className="hover:text-white transition">Terms of Service</a>

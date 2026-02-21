@@ -24,8 +24,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="font-bold text-gray-900">Email Us</p>
-                    <p className="text-gray-500 text-sm mt-1">support@luxemart.com</p>
-                    <p className="text-gray-500 text-sm">sales@luxemart.com</p>
+                    <p className="text-gray-500 text-sm mt-1">support@Bagxco.com</p>
+                    <p className="text-gray-500 text-sm">sales@Bagxco.com</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">

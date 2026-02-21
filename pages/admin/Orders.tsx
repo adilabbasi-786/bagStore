@@ -70,7 +70,7 @@ export default function Orders() {
               <tr key={order.id} className="hover:bg-gray-50">
                 <td className="p-4 font-mono text-xs">{order.id.slice(0, 8)}...</td>
                 <td className="p-4 text-sm">{order.profiles?.email}</td>
-                <td className="p-4 font-medium">₹{order.total_amount}</td>
+                <td className="p-4 font-medium">Rs{order.total_amount}</td>
                 <td className="p-4">
                   <div className="flex flex-col gap-1 items-start">
                     {getPaymentMethod(order)}

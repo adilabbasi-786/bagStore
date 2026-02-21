@@ -33,7 +33,7 @@ export default function Auth() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
       <div className="bg-white w-full max-w-md p-8 rounded-2xl shadow-xl">
-        <h2 className="text-3xl font-bold text-center mb-2 text-brand-900">LuxeMart</h2>
+        <h2 className="text-3xl font-bold text-center mb-2 text-brand-900">BagxCo</h2>
         <p className="text-center text-gray-500 mb-8">{isLogin ? 'Welcome back' : 'Create an account'}</p>
         
         <form onSubmit={handleAuth} className="space-y-4">

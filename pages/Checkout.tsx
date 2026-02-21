@@ -85,8 +85,8 @@ export default function Checkout() {
     const options = {
       key: process.env.REACT_APP_RAZORPAY_KEY_ID || 'rzp_test_placeholder', 
       amount: amountInPaise,
-      currency: "INR",
-      name: "LuxeMart",
+      currency: "PKR",
+      name: "Bagxco",
       description: "Order Payment",
       order_id: orderId,
       handler: async function (response: any) {
@@ -232,14 +232,14 @@ export default function Checkout() {
                   <span className="font-medium text-gray-900">{item.product.title}</span>
                   <span className="text-gray-500 ml-2">x {item.quantity}</span>
                 </div>
-                <span className="font-medium">₹{((item.product.sale_price || item.product.price) * item.quantity).toFixed(2)}</span>
+                <span className="font-medium">RS{((item.product.sale_price || item.product.price) * item.quantity).toFixed(2)}</span>
               </div>
             ))}
           </div>
           <div className="border-t border-gray-200 pt-6 mb-8 space-y-3">
              <div className="flex justify-between text-gray-600">
                <span>Subtotal</span>
-               <span>₹{cartTotal.toFixed(2)}</span>
+               <span>Rs{cartTotal.toFixed(2)}</span>
              </div>
              <div className="flex justify-between text-gray-600">
                <span>Shipping</span>
@@ -247,7 +247,7 @@ export default function Checkout() {
              </div>
              <div className="flex justify-between font-bold text-xl pt-2 text-gray-900">
                <span>Total</span>
-               <span>₹{cartTotal.toFixed(2)}</span>
+               <span>Rs{cartTotal.toFixed(2)}</span>
              </div>
           </div>
           
